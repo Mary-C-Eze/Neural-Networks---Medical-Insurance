@@ -1,0 +1,19 @@
+project goal: Predicting Medical Insurance Costs Using Neural Networks
+
+Introduction: 
+Healthcare costs vary significantly across individuals due to factors such as age, lifestyle, and medical risk indicators. Accurately estimating these costs is valuable for insurance companies, policy designers, and healthcare analysts.
+
+In this project, we develop a deep learning regression model using Keras to predict individual medical insurance charges based on demographic and behavioral attributes.
+
+This project demonstrates the full machine learning workflow, from raw data to model evaluation, with a focus on neural networks.
+
+
+Objective
+The primary objective of this project is to:
+Build a neural network model that predicts insurance charges (charges)
+Apply proper data preprocessing techniques (encoding, scaling, splitting)
+Evaluate model performance using regression metrics such as:
+Mean Absolute Error (MAE)
+Mean Squared Error (MSE)
+Analyze model behavior (underfitting vs overfitting)
+Communicate results clearly and professionally
