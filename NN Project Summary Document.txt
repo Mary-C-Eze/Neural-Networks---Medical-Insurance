@@ -1,0 +1,41 @@
+Summary Document
+ Medical Insurance Cost Prediction Using Neural Networks
+
+
+1. Description of Approach
+The objective of this project was to build a regression model capable of predicting individual medical insurance costs based on personal and lifestyle attributes.
+The workflow followed a structured machine learning pipeline:
+Data Preparation
+The dataset was split into training (70%), validation (15%), and test (15%) sets to ensure proper evaluation and prevent data leakage.
+Categorical variables (sex, smoker, region) were transformed using one-hot encoding.
+Numerical features (age, BMI, children) were standardized to ensure consistent scaling across inputs.
+The target variable (insurance charges) was also scaled to improve neural network training stability.
+Model Development
+A feedforward neural network was built using TensorFlow/Keras.
+The baseline architecture consisted of two hidden layers (64 and 32 neurons) using ReLU activation.
+The model was compiled using the Adam optimizer and mean squared error loss function, with mean absolute error as an evaluation metric.
+Early stopping was applied using validation loss to prevent overfitting.
+Model Evaluation Strategy
+Performance was monitored using both validation data during training and a separate test set for final evaluation.
+Predictions were converted back to the original scale for interpretability in real-world dollar values.
+Visual evaluation was performed using training curves and predicted vs actual plots.
+
+2. Results and Findings
+The final model achieved the following performance:
+Baseline model test MAE: approximately $2,586
+Improved model test MAE: approximately $2,668
+Final selected model: baseline neural network due to better generalization performance
+Key observations from the results:
+The model successfully captured the relationship between input features and insurance costs.
+Validation performance closely followed training performance, suggesting stable generalization with minimal overfitting.
+Feature-level insights from exploratory analysis indicated that:
+Smoking status had the strongest relationship with insurance cost.
+BMI and age also showed clear positive correlations with higher charges.
+
+3. Reflection on the Process
+One key takeaway for the project was that increasing model complexity does not always improve performance. The more complex neural network with dropout did not outperform the simpler baseline model, highlighting that smaller datasets often benefit from simpler architectures.
+Another important thing was the value of proper data preprocessing. Ensuring correct encoding, scaling, and prevention of data leakage directly impacted the model stability and performance.
+The project also reinforced the importance of validation strategy. Using a separate validation set allowed for real-time monitoring of generalization performance and informed decisions such as early stopping.
+Finally, this project showed that Visual tools such as loss curves and predicted vs actual plots were essential for understanding model behavior beyond numerical metrics.
+Overall, the project provides a complete example of a supervised learning pipeline applied to a real-world regression problem, balancing model performance with interpretability and proper machine learning practices.
+
