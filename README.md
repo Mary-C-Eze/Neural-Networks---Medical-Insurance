@@ -73,16 +73,16 @@ Key Insights
 Smoking status is strongly associated with higher insurance costs
 BMI and age also show positive correlation with charges
 Simpler neural network performed better than more complex architecture
-Dataset does not require deep model complexity
+Dataset did not require deep model complexity
+
  Conclusion
 
 This project demonstrates that in structured tabular data problems, simpler neural networks can outperform more complex architectures when the dataset is relatively small. Proper preprocessing and validation strategy were critical in achieving stable performance.
 
  Future Improvements
-Compare with tree-based models (Random Forest, XGBoost)
+Compare with tree-based models (Random Forest)
 Apply feature importance analysis (SHAP)
 Perform hyperparameter tuning
-Experiment with log-transformed target variable
 
 How to Run
 pip install -r requirements.txt
